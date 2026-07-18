@@ -1,0 +1,33 @@
+{
+  "name": "genpark-ai-fact-checker-skill",
+  "version": "1.0.0",
+  "description": "GenPark AI Agent Skill - Statement fact verifier with TRUE/FALSE/PARTIAL verdict and citations.",
+  "author": "genpark",
+  "category": "operations",
+  "tags": [
+    "fact-check",
+    "verification",
+    "citations"
+  ],
+  "inputs": {
+    "statement": {
+      "type": "string"
+    },
+    "reference_sources": {
+      "type": "array"
+    }
+  },
+  "outputs": {
+    "verdict": {
+      "type": "string"
+    },
+    "confidence": {
+      "type": "number"
+    },
+    "citation": {
+      "type": "string"
+    }
+  },
+  "entrypoint": "client.py",
+  "example": "example_usage.py"
+}
